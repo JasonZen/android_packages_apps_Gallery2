@@ -1954,6 +1954,7 @@ public class VideoModule implements CameraModule,
             mParameters.setVideoHighFrameRate(mEnableHFR ? hfrModes.get(hfrModes.size() - 1) : "off");
         }
 
+<<<<<<< HEAD
         // Set Video HDR.
         if (!mActivity.getResources().getBoolean(R.bool.enableVideoHDR)) {
             String videoHDR = mPreferences.getString(
@@ -1967,6 +1968,8 @@ public class VideoModule implements CameraModule,
             }
         }
 
+=======
+>>>>>>> 17bd9d3... camera: Add support for high frame rate video
         Util.dumpParameters(mParameters);
 
         mActivity.mCameraDevice.setParameters(mParameters);
